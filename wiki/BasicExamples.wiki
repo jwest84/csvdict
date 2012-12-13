@@ -24,6 +24,18 @@
 }}}
 <br><br>
 * Get some info from a specified record (row)
+{{{
+    private static final int LATITUDE_POS = 4;
+    private static final int LONGITUDE_POS = 5;
+    public float[] getStationLocation(String stationID)
+        throws CSVDictException
+    {
+        float[] location = new float[2];
+        location[0] = stationInfo.getFloat(stationID, LATITUDE_POS);
+        location[1] = stationInfo.getFloat(stationID, LONGITUDE_POS);      
+        return location;
+    }
+}}}
 
 
 ===IntKeyCSVDict===
