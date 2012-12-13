@@ -1,11 +1,11 @@
 #labels Featured
-[http://www.sonomatech.com http://lh3.googleusercontent.com/-532qqKyC4Xs/UMoXfKf0TOI/AAAAAAAAApc/yp7IIMJS5DQ/s218/STI_logo_web.jpg]
+
 <br>
 ----
 = Motivation =
 ----
 
-*_The developers at [http://www.sonomatech.com STI] hope that other developers will find this simple package useful._*
+*_The developers at [http://www.sonomatech.com http://lh3.googleusercontent.com/-532qqKyC4Xs/UMoXfKf0TOI/AAAAAAAAApc/yp7IIMJS5DQ/s218/STI_logo_web.jpg] hope that other developers will find this simple package useful._*
 
 This library was conceived as part of a scientific modeling project. The models that were coded make use of various empirical data sets -- measurements and calculated values resulting from measurements. The data can change from time to time when new measurements or new methods of calculation are provided by scientists. CSV files seemed to be a useful means of representing the data. The scientists are themselves familiar with editing CSV files, and would not have to touch the code.
 
