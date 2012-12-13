@@ -6,32 +6,20 @@
    * The examples below show how to accomplish the same tasks as the [BasicExamples basic examples] using generated classes instead of `CSVDict`.
 ----
 <br><br>
-* Create a static CSVDict for a relatively large CSV files.
-{{{
-    private static CSVDict stationInfo;
-    
-    public CSVDict getStationInfo(File stationInfoCSVFile)
-        throws CSVDictException
-    {
-        if (stationInfo == null) {
-            stationInfo = new CSVDict(stationInfoCSVFile.getAbsolutePath(), ',', 0);
-        }
-        return stationInfo;
-    }
-  
-}}}
-<br><br>
 * Get some info from a specified record (row).
 {{{
-    private static final int LATITUDE_POS = 4;
-    private static final int LONGITUDE_POS = 5;
-
     public float[] getStationLocation(String stationID)
         throws CSVDictException
     {
+        GeneratedStationInfo station = GeneratedStationInfo.getInstance(stationID);
         float[] location = new float[2];
-        location[0] = stationInfo.getFloat(stationID, LATITUDE_POS);
-        location[1] = stationInfo.getFloat(stationID, LONGITUDE_POS);      
+
+        // note that "LatDegrees" and "LonDegress" are the actual
+        // column namesfrom the header row in the CSV file that was
+        // used to generate GeneratedStationInfo.
+        location[0] = stationInfo.LatDegrees;
+        location[1] = stationInfo.LonDegrees;
+      
         return location;
     }
 }}}
