@@ -1,5 +1,5 @@
 ----
-== Motivation ==
+= Motivation =
 
 *_The developers at STI hope that other developers will find this simple package useful._*
 
@@ -12,7 +12,7 @@ In the course of designing a framework for these models a common pattern emerged
 Some of the CSV files have many columns. It is tedious to count columns in order to access the desired cell. Also, to increase code readability there would have to be a proliferation of constants to represent the column numbers of fields in the CSV files. Thus the idea arose of a code generator that could create java classes that used the CSV column header values as member data variable names.
 ----
 
-== Features ==
+= Features =
 
   * *Key-based Record Access* - as described above and on [http://code.google.com/p/csvdict home page], keys can be ints or Strings
   * *Auto-Named Field Access* - as described above and on [http://code.google.com/p/csvdict home page], field names are column header values
