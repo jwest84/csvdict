@@ -1,7 +1,7 @@
   * === [Overview Overview]===
   * === [UserGuide User Guide]===
     * [BasicExamples Basic Examples]
-    * [GenClasses Generating Classes]
     * [UseGenClasses Using Generated Classes]
+    * [GenClasses Generating Classes]
 ----
 === [http://csvdict.googlecode.com/svn/trunk/csvdict/javadoc/index.html javadoc]===
