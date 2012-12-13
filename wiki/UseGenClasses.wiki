@@ -24,7 +24,8 @@
     }
 }}}
 <br><br>
-* Get some info for all records
+*Get some info for all records.
+  * The code for this method is exactly the same as the example in [BasicExamples basic examples].  But note that in this case, when `getStationLocation()` is called, the `getInstance()` method of the generated class is called.  In most cases it would be more efficient to use CSVDict to process all records because for each new record, `getInstance()` is using CSVDict to read the entire CSV file. 
 {{{
     public Map<String, float[]> getAllLocations()
         throws CSVDictException
