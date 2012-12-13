@@ -1,9 +1,10 @@
 #labels Featured
 =Basic Examples=
+(Note that some examples rely on previous examples.)
 ----
 <br>
 ===CSVDict===
-* create a static CSVDict for a relatively large CSV files.
+* Create a static CSVDict for a relatively large CSV files.
 {{{
     private static CSVDict stationInfo;
     
@@ -21,5 +22,8 @@
     }
   
 }}}
+<br><br>
+* Get some info from a specified record (row)
+
 
 ===IntKeyCSVDict===
