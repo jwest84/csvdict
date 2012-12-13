@@ -9,6 +9,6 @@
 ----
 [BasicExamples Basic Examples]
 
-[GenClasses Generating Classes]
-
 [UseGenClasses Using Generated Classes]
+
+[GenClasses Generating Classes]
