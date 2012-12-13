@@ -1,24 +1,20 @@
 #labels Featured
-=Basic Examples=
-(Note that some examples rely on previous examples.)
-----
 <br>
-==CSVDict / IntKeyCSVDict==
-`(Using IntKeyCSVDict is the same as using CSVDict except that the accessor methods take an int instead of a String as the first (key) argument.)`
- <br>
+----
+=Basic Examples using CSVDict=
+   * Note that some examples rely on previous examples.
+   * Using IntKeyCSVDict is the same as using CSVDict except that the accessor methods take an int instead of a String as the first (key) argument.
+----
+<br><br>
 * Create a static CSVDict for a relatively large CSV files.
 {{{
     private static CSVDict stationInfo;
     
     public CSVDict getStationInfo(File stationInfoCSVFile)
-        throws SmfException
+        throws CSVDictException
     {
         if (stationInfo == null) {
-            try {
-                stationInfo = new CSVDict(stationInfoCSVFile.getAbsolutePath(), ',', 0);
-            } catch (CSVDictException csvde) {
-                throw new SmfException(csvde);
-            }
+            stationInfo = new CSVDict(stationInfoCSVFile.getAbsolutePath(), ',', 0);
         }
         return stationInfo;
     }
