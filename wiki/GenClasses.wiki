@@ -8,7 +8,7 @@
   * the index of the key to be used when instancing the generated class that corresponds to the CSV file
   * whether the key is an int or a String.
 *There is a more detailed explanation of the properties file in the [http://csvdict.googlecode.com/svn/trunk/csvdict/javadoc/com/sonomatech/csvdict/RowClassSourceGenerator.html javadoc] for RowClassSourceGenerator.<br><br>
-Here is an example of a properties file:
+Here is an example of a properties file:*
 {{{
     species.csv = com.sti.fuelbed.calculators.SpeciesIV,0,int
     woody_parameters.csv = com.sti.fuelbed.calculators.WoodyIV,0,int,1,String, _ByName
