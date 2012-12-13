@@ -5,4 +5,10 @@
   * [http://csvdict.googlecode.com/svn/trunk/csvdict/javadoc/com/sonomatech/csvdict/IntKeyCSVDict.html IntKeyCSVDict] - subclass of `CSVDict` that uses integer keys.
   * [http://csvdict.googlecode.com/svn/trunk/csvdict/javadoc/com/sonomatech/csvdict/RowClassSourceGenerator.html RowClassSourceGenerator] - a Java program to generate classes from CSV files which allow accessing cells using the CSV header values instead of column numbers.
 
-===CSVDict Examples===
+===Basic Examples===
+==CSVDict==
+==IntKeyCSVDict==
+
+===Class Generator===
+==Generating Classes==
+==Using Generated Classes==
