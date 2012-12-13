@@ -49,6 +49,10 @@ import java.util.LinkedHashMap;
 import java.util.List;
 
 /**
+ <br/><br/><br/>
+ <img src="doc-files/STI_logo_web.jpg"/>
+ <br/><br/><br/><br/>
+ * 
  * Turns a CSV file into an in-memory table that is queried using a key value and
  * a position. The key value selects the row in the table and the position
  * selects the column. A header row in the CSV file containing field names is required
