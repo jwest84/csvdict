@@ -4,4 +4,4 @@
     * [GenClasses Generating Classes]
     * [UseGenClasses Using Generated Classes]
 ----
-=== [http://csvdict.googlecode.com/svn/trunk/csvdict/javadoc/index.html javadoc]===
+  * === [http://csvdict.googlecode.com/svn/trunk/csvdict/javadoc/index.html javadoc]===
