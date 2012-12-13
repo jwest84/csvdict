@@ -14,9 +14,10 @@
         GeneratedStationInfo station = GeneratedStationInfo.getInstance(stationID);
         float[] location = new float[2];
 
-        // note that "LatDegrees" and "LonDegress" are the actual
+        // Note that "LatDegrees" and "LonDegress" are the actual
         // column namesfrom the header row in the CSV file that was
-        // used to generate GeneratedStationInfo.
+        // used to generate GeneratedStationInfo.  This feature
+        // becomes important when dealing with "wide" CSV files.
         location[0] = stationInfo.LatDegrees;
         location[1] = stationInfo.LonDegrees;
       
