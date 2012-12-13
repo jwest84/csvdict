@@ -3,5 +3,23 @@
 ----
 <br>
 ===CSVDict===
+* create a static CSVDict for a relatively large CSV files.
+{{{
+    private static CSVDict stationInfo;
+    
+    public CSVDict getStationInfo(File stationInfoCSVFile)
+        throws SmfException
+    {
+        if (stationInfo == null) {
+            try {
+                stationInfo = new CSVDict(stationInfoCSVFile.getAbsolutePath(), ',', 0);
+            } catch (CSVDictException csvde) {
+                throw new SmfException(csvde);
+            }
+        }
+        return stationInfo;
+    }
+  
+}}}
 
 ===IntKeyCSVDict===
