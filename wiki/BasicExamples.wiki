@@ -35,3 +35,20 @@
         return location;
     }
 }}}
+<br><br>
+* Get some info for all records
+{{{
+    public Map<String, float[]> getAllLocations()
+        throws CSVDictException
+    {
+        Map<String, float[]> locations = new HashMap<String, float[]>();
+        for (String stationID : stationInfo.getColumn("StationID")) {
+
+            // calling method from previous example
+            float[] stationLoc = getStationLocation(stationID);
+
+            locations.put(stationID, stationLoc);
+        }
+        return locations;
+    }
+}}}
