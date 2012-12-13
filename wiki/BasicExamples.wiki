@@ -3,7 +3,9 @@
 (Note that some examples rely on previous examples.)
 ----
 <br>
-===CSVDict===
+==CSVDict / IntKeyCSVDict==
+`(Using IntKeyCSVDict is the same as using CSVDict except that the accessor methods take an int instead of a String as the first (key) argument.)`
+ <br>
 * Create a static CSVDict for a relatively large CSV files.
 {{{
     private static CSVDict stationInfo;
@@ -27,6 +29,7 @@
 {{{
     private static final int LATITUDE_POS = 4;
     private static final int LONGITUDE_POS = 5;
+
     public float[] getStationLocation(String stationID)
         throws CSVDictException
     {
@@ -36,6 +39,3 @@
         return location;
     }
 }}}
-
-
-===IntKeyCSVDict===
