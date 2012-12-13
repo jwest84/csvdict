@@ -50,7 +50,7 @@ import java.util.List;
 
 /**
  <br/><br/><br/>
- <img src="doc-files/STI_logo_web.jpg"/>
+ <a href="http://www.sonomatech.com"><img src="doc-files/STI_logo_web.jpg"/></a>
  <br/><br/><br/><br/>
  * 
  * Turns a CSV file into an in-memory table that is queried using a key value and
