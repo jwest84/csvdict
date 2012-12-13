@@ -15,4 +15,4 @@ Some of the CSV files have many columns. It is tedious to count columns in order
 == Features ==
 
   * *Key-based Record Access* - as described above and on [http://code.google.com/p/csvdict home page]
-  * *Auto-Named Field Access* - as described above and on home page
+  * *Auto-Named Field Access* - as described above and on [http://code.google.com/p/csvdict home page]
