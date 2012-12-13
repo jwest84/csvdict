@@ -1,3 +1,16 @@
 #labels Featured
+<br>
+----
 =Generating Classes=
 ----
+*The class generator ([http://csvdict.googlecode.com/svn/trunk/csvdict/javadoc/com/sonomatech/csvdict/RowClassSourceGenerator.html RowClassSourceGenerator]) generates classes from CSV files. It is meant to be used as a command-line tool using the main() method, and is driven by a properties file which lists the CSV files, the index of the key to be used when instancing the generated class that corresponds to the CSV file, and whether the key is an int or a String. Here is an example of invoking the class generator from an ant build script:
+{{{
+          <target name="-pre-compile">
+              <java classname="com.sti.justice.csvdict.ClassSourceGenerator">
+              <classpath>
+                  <pathelement location="lib\csvdict-1.0.jar"/>
+              </classpath>
+              <arg line="generated\csg.properties csv generated" />
+              </java>
+          </target>
+}}}
