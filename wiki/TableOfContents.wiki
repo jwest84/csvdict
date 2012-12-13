@@ -1,5 +1,5 @@
   * === [Overview Overview]===
   * === [UserGuide User Guide]===
-    * [BasicExamples Basic Examples ]
+    * [BasicExamples Basic Examples]
 ----
 === [http://csvdict.googlecode.com/svn/trunk/csvdict/javadoc/index.html javadoc]===
