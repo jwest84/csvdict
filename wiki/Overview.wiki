@@ -17,7 +17,7 @@ Some of the CSV files have many columns. It is tedious to count columns in order
   * *Key-based Record Access* - as described above and on [http://code.google.com/p/csvdict home page], keys can be ints or Strings
   * *Auto-Named Field Access* - as described above and on [http://code.google.com/p/csvdict home page], field names are column header values
   * *CSV file loading* -  can be loaded via pathname or as a resource
-  * *Type-specific accessors* - Values are requested as String, Integer, or Float
+  * *Type-specific accessors* - values are requested as String, Integer, or Float
   * *Miscellaneous convenience methods*
     * get column by name or position
     * get column filtered on another column's value
