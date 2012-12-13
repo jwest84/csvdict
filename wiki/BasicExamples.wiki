@@ -25,7 +25,7 @@
   
 }}}
 <br><br>
-* Get some info from a specified record (row)
+* Get some info from a specified record (row).
 {{{
     private static final int LATITUDE_POS = 4;
     private static final int LONGITUDE_POS = 5;
