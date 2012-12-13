@@ -1,7 +1,7 @@
 #labels Featured
 <br>
 ----
-=Basic Examples using CSVDict=
+=Basic Examples Using CSVDict=
    * Note that some examples rely on previous examples.
    * Using IntKeyCSVDict is the same as using CSVDict except that the accessor methods take an int instead of a String as the first (key) argument.
 ----
