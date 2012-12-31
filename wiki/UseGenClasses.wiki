@@ -12,7 +12,7 @@
     GeneratedFooAccessor fooData = GeneratedFooAccessor.getInstance(keyVal);
 }}}
 *The instance of the generated class contains the values from the selected row of the CSV file, which
-are accessed directly, using the actual names form the header row in the CSV file:*
+are accessed directly, using the actual names from the header row in the CSV file:*
 {{{
     float adjustedFooFactor = baseFoo * fooData.AdjustmentFactor; // "AdjustmentFactor" is from the CSV header
 }}}
