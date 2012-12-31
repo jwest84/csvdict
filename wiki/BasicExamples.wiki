@@ -6,7 +6,7 @@
    * Using IntKeyCSVDict is the same as using CSVDict except that the accessor methods take an int instead of a String as the first (key) argument.
 ----
 <br><br>
-* Create a static CSVDict for a relatively large CSV files.
+* Create a static CSVDict for a relatively large CSV file.
 {{{
     private static CSVDict stationInfo;
     
