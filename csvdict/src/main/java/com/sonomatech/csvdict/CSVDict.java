@@ -177,7 +177,7 @@ public class CSVDict
         throws CSVDictException
     {
         //dict = new LinkedHashMap<String, String[]>();
-        dict = new LinkedHashMap<>();
+        dict = new LinkedHashMap<String, String[]>();
         String delimStr = new Character(delimiter).toString();
         String delimRegex = delimStr + "(?=([^\"]*\"[^\"]*\")*[^\"]*$)";        
 
