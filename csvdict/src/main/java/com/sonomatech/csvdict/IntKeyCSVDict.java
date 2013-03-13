@@ -73,10 +73,10 @@ public class IntKeyCSVDict extends CSVDict
      * @param keyIndex the zero-based index of the column that is to be used as the key
      * @throws com.sti.justice.csvdict.CSVDict.CSVDictException
      */
-    public IntKeyCSVDict(String csvFileName, char delimiter, int keyIndex)
+    public IntKeyCSVDict(String csvFileName, char delimiter, int keyIndex, ClassLoader cl)
         throws CSVDictException
     {
-        super(csvFileName, delimiter, keyIndex);
+        super(csvFileName, delimiter, keyIndex, cl);
         keyIsInt();
     }
 

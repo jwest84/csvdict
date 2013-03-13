@@ -60,7 +60,7 @@ import javax.lang.model.SourceVersion;
  *<code>
  *{@code
  *          <target name="-pre-compile">
- *              <java classname="com.sti.justice.csvdict.ClassSourceGenerator">
+ *              <java classname="com.sonomatech.csvdict.ClassSourceGenerator">
  *              <classpath>
  *                  <pathelement location="lib\justice-1.0-SNAPSHOT.jar"/>
  *              </classpath>
@@ -139,8 +139,8 @@ fccs_summary_calculations.csv = com.sti.fuelbed.calculators.testers.SummaryCalcu
  *<FONT color ="darkslateblue">
  *package com.sti.fuelbed.calculators;
 
-import com.sti.justice.csvdict.CSVDict.CSVDictException;
-import com.sti.justice.csvdict.IntKeyCSVDict;
+import com.sonomatech.csvdict.CSVDict.CSVDictException;
+import com.sonomatech.csvdict.IntKeyCSVDict;
 import java.util.HashMap;
 
 
@@ -269,11 +269,11 @@ public class RowClassSourceGenerator
             String shortClassName = endStr(fullClassName, '.');
 
             source.append("package " + fullClassName.substring(0, fullClassName.lastIndexOf('.')) + ";\n\n");
-            source.append("import com.sti.justice.csvdict.CSVDict.CSVDictException;\n");
+            source.append("import com.sonomatech.csvdict.CSVDict.CSVDictException;\n");
             if (intKey)
-                source.append("import com.sti.justice.csvdict.IntKeyCSVDict;\n");
+                source.append("import com.sonomatech.csvdict.IntKeyCSVDict;\n");
             else
-                source.append("import com.sti.justice.csvdict.CSVDict;\n");
+                source.append("import com.sonomatech.csvdict.CSVDict;\n");
             source.append("import java.util.HashMap;\n");
 
             source.append("\n\npublic class " + shortClassName + " {\n");
@@ -319,11 +319,12 @@ public class RowClassSourceGenerator
             source.append("        throws CSVDictException\n");
             source.append("    {\n");
             source.append("        this." + keyName + " = " + keyName + ";\n");
+            String cLoaderArg = shortClassName + ".class.getClassLoader()";
 
             if (intKey)
-                source.append("        IntKeyCSVDict dict = new IntKeyCSVDict(\"" + endStr(csvFilePath, File.separatorChar) + "\", ',', " + keyIndex + ");\n");
+                source.append("        IntKeyCSVDict dict = new IntKeyCSVDict(\"" + endStr(csvFilePath, File.separatorChar) + "\", ',', " + keyIndex + "," + cLoaderArg + ");\n");
             else
-                source.append("        CSVDict dict = new CSVDict(\"" + endStr(csvFilePath, File.separatorChar) + "\", ',', " + keyIndex + ");\n");
+                source.append("        CSVDict dict = new CSVDict(\"" + endStr(csvFilePath, File.separatorChar) + "\", ',', " + keyIndex + "," + cLoaderArg + ");\n");
 
             fCnt = 0;
             for (String memberName : dict.getFieldNames()) {
